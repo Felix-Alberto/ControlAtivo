@@ -1,0 +1,228 @@
+﻿@charset "UTF-8";
+
+@font-face {
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-display: optional;
+    src: url(//uicore.dellcdn.com/0.2.7/fonts/Roboto-Light-v2.137.eot);
+    src: url(//uicore.dellcdn.com/0.2.7/fonts/Roboto-Light-v2.137.eot) format("embedded-opentype"),url(//uicore.dellcdn.com/0.2.7/fonts/Roboto-Light-v2.137.woff2) format("woff2"),url(//uicore.dellcdn.com/0.2.7/fonts/Roboto-Light-v2.137.woff) format("woff"),url(//uicore.dellcdn.com/0.2.7/fonts/Roboto-Light-v2.137.ttf) format("truetype"),url(//uicore.dellcdn.com/0.2.7/fonts/Roboto-Light-v2.137) format("svg")
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    color: #006bbd;
+    text-decoration: none
+}
+
+body[smrt-modal-open] {
+    padding: 0 !important
+}
+
+.sd-dds-font-icon {
+    font-family: dell-tech-icons
+}
+
+    .sd-dds-font-icon.dds_processor:before {
+        content: "\ea2e"
+    }
+    .sd-dds-font-icon.dds_device-screen-size:before {
+        content: "\e98d"
+    }
+
+    .sd-dds-font-icon.dds_disc-system:before {
+        content: "\e99f"
+    }
+
+    .sd-dds-font-icon.dds_hard-drive:before {
+        content: "🖫"
+    }
+
+    .sd-dds-font-icon.dds_memory:before {
+        content: "\e9f3"
+    }
+
+    .sd-dds-font-icon.dds_video-card:before {
+        content: "\ea87"
+    }
+
+.sd-btn {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1
+}
+
+.sd-secondary-btn-blue {
+    background: 0 0;
+    border: solid 2px #006bbd;
+    color: #006bbd;
+    padding: 10px 14px
+}
+.sd-ps-stack {
+    padding: 16px 16px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 7px 2px rgba(0,0,0,.12);
+    box-shadow: 0 2px 7px 2px rgba(0,0,0,.12);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff
+}
+
+    .sd-ps-stack .sd-icon {
+        position: relative;
+        top: 1px
+    }
+
+.sd-ps-spec-desc {
+    margin: 16px 0 8px
+}
+
+.sd-ps-feature-specs {
+    font-size: 14px
+}
+
+    .sd-ps-feature-specs .sd-ps-spec-list ul {
+        padding-left: 16px
+    }
+
+    .sd-ps-feature-specs li .sd-ps-spec-item {
+        display: block
+    }
+
+    .sd-ps-feature-specs .sd-ps-spec-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 4px;
+        line-height: 21px
+    }
+
+
+
+.sd-ps-feature-specs .sd-ps-spec-item .sd-icon {
+    font-size: 20px;
+    padding-right: 8px
+}
+
+.sd-category-container {
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 992px) {
+    .sd-category-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+.sd-category-container {
+    padding: 0 16px
+}
+    .sd-category-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 32px
+    }
+    .sd-category-container {
+        margin: 0 auto;
+        font-size: 16px
+    }
+
+.sd-category-container .sd-ps-stack {
+    width: 100%;
+    margin-bottom: 24px
+}
+
+.sd-category-container .sd-category-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+.sd-ps-stack.sd-benefits-stack {
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    z-index: 0
+}
+.sd-ps-stack.sd-escape-hatch {
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+    .sd-ps-stack.sd-escape-hatch a {
+        margin: 0 auto
+    }
+
+.sd-ps-stack.sd-escape-hatch img {
+    border-radius: 6px;
+    margin: 0 auto;
+    max-width: 100%
+}
+
+.sd-ps-button {
+    margin: 16px 0 0
+}
+
+.sd-ps-claim-progress-bar {
+    margin: 16px 0
+}
+
+
+
+.sd-ps-claim-progress-bar .sd-ps-claim-progress-bar-indicator {
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 3px
+}
+    .sd-ps-claim-progress-bar .sd-ps-claimed {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline
+    }
+@media (min-width: 1200px) {
+    .sd-category-container .sd-ps-stack, .sd-category-container .sd-ps-stack:nth-child(2n), .sd-category-container .sd-ps-stack:nth-child(3n) {
+        width: 24%;
+        margin-right: 1.333%
+    }
+
+        .sd-category-container .sd-ps-stack:nth-child(4n) {
+            margin-right: 0
+        }
+}
