@@ -1,595 +1,585 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 <section id="home">
-    <div class="container-home">
-        <div class="block">
-            <img src="~/img/NotebookXPS.jpg" alt="Notebook com emojis" />
-        </div>
-        <div class="home-text">
-            <h3>Seja bem vindo</h3>
-                     
-        </div>
-    </div>
-    <div>
+ <div class="container-home">
+  <div class="block">
+   <img src="~/img/NotebookXPS.jpg" alt="Notebook com emojis" />
+  </div>
+  <div class="home-text">
+   <h3>Seja bem vindo</h3>
 
-    </div>
+  </div>
+ </div>
+ <div>
+ </div>
 </section>
 <section class="visao-geral">
-    <h3>Visão geral do serviço</h3>
-    <div class="overview-card">
-        <div class="overview-card-header">
-            <span class="overview-resources-icon"></span>
+ <h3>Visão geral do serviço</h3>
+ <div class="overview-card">
+  <div class="overview-card-header">
+   <span class="overview-resources-icon"></span>
+  </div>
+  <div class="card-content">
+   <stud-resources>
+	<div ng-controller="MainCtrl" class="resource-container">
+	 <div class="resource-chart">
+	  <div class="resource-chart-left">
+	   <div class="resource-title">Recursos</div>
+	   <div id="chart" class="resource-chart-svg"><svg width="121" height="121"><g transform="translate(60.5,60.5)"><circle cx="0" cy="0" r="60.5" style="fill: rgb(255, 255, 255);"></circle><g class="arc"><path data-arc-data="311" d="M3.704556567420744e-15,-60.5A60.5,60.5,0,0,1,47.62878243510196,-37.30615343009412L36.607246003838696,-28.67332453717978A46.5,46.5,0,0,0,2.847303808017596e-15,-46.5Z" style="fill: rgb(29, 162, 180); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="12" d="M47.62878243510196,-37.30615343009412A60.5,60.5,0,0,1,48.90404103561539,-35.61803995711788L37.58740344059696,-27.375848892660848A46.5,46.5,0,0,0,36.607246003838696,-28.67332453717978Z" style="fill: rgb(181, 69, 164); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="1345" d="M48.90404103561539,-35.61803995711788A60.5,60.5,0,1,1,-59.832996164508394,-8.958937993865352L-45.987344159498186,-6.88579531759899A46.5,46.5,0,1,0,37.58740344059696,-27.375848892660848Z" style="fill: rgb(175, 144, 4); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="445" d="M-59.832996164508394,-8.958937993865352A60.5,60.5,0,0,1,-7.561669337087044,-60.02558751762916L-5.811861556604092,-46.13536891850836A46.5,46.5,0,0,0,-45.987344159498186,-6.88579531759899Z" style="fill: rgb(177, 122, 240); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="43" d="M-7.561669337087044,-60.02558751762916A60.5,60.5,0,0,1,-1.1113669702262229e-14,-60.5L-8.541911424052788e-15,-46.5A46.5,46.5,0,0,0,-5.811861556604092,-46.13536891850836Z" style="fill: rgb(200, 200, 200); stroke: rgb(255, 255, 255);"></path></g><text><tspan x="0" dx="-0.1em" dy="-0.3em" style="text-anchor: middle; font-size: 20px; line-height: 32px;">2156</tspan><tspan x="0" dy="1.6em" style="text-anchor: middle; font-size: 12px;">Em uso</tspan></text></g></svg></div>
+	   <div class="resource-machine-type">
+		<stud-dropdown-input class="resource-machine-type-input" _nghost-sro-c192="">
+		 <stud-dropdown>
+		  <div tabindex="0" class="dropdown-base" id="" style="width: 136px; height: 21px;">
+		   <div class="dropdown">
+			<div class="dropdown-base-select" title="Availability state" style="height: 20px; background-position-x: 104px;">Estado de disponibilidade</div>
 
-        </div>
-        <div class="card-content">
-            <stud-resources>
-                <div ng-controller="MainCtrl" class="resource-container">
-                    <div class="resource-chart">
-                        <div class="resource-chart-left">
-                            <div class="resource-title">Recursos</div>
-                            <div id="chart" class="resource-chart-svg"><svg width="121" height="121"><g transform="translate(60.5,60.5)"><circle cx="0" cy="0" r="60.5" style="fill: rgb(255, 255, 255);"></circle><g class="arc"><path data-arc-data="311" d="M3.704556567420744e-15,-60.5A60.5,60.5,0,0,1,47.62878243510196,-37.30615343009412L36.607246003838696,-28.67332453717978A46.5,46.5,0,0,0,2.847303808017596e-15,-46.5Z" style="fill: rgb(29, 162, 180); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="12" d="M47.62878243510196,-37.30615343009412A60.5,60.5,0,0,1,48.90404103561539,-35.61803995711788L37.58740344059696,-27.375848892660848A46.5,46.5,0,0,0,36.607246003838696,-28.67332453717978Z" style="fill: rgb(181, 69, 164); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="1345" d="M48.90404103561539,-35.61803995711788A60.5,60.5,0,1,1,-59.832996164508394,-8.958937993865352L-45.987344159498186,-6.88579531759899A46.5,46.5,0,1,0,37.58740344059696,-27.375848892660848Z" style="fill: rgb(175, 144, 4); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="445" d="M-59.832996164508394,-8.958937993865352A60.5,60.5,0,0,1,-7.561669337087044,-60.02558751762916L-5.811861556604092,-46.13536891850836A46.5,46.5,0,0,0,-45.987344159498186,-6.88579531759899Z" style="fill: rgb(177, 122, 240); stroke: rgb(255, 255, 255);"></path></g><g class="arc"><path data-arc-data="43" d="M-7.561669337087044,-60.02558751762916A60.5,60.5,0,0,1,-1.1113669702262229e-14,-60.5L-8.541911424052788e-15,-46.5A46.5,46.5,0,0,0,-5.811861556604092,-46.13536891850836Z" style="fill: rgb(200, 200, 200); stroke: rgb(255, 255, 255);"></path></g><text><tspan x="0" dx="-0.1em" dy="-0.3em" style="text-anchor: middle; font-size: 20px; line-height: 32px;">2156</tspan><tspan x="0" dy="1.6em" style="text-anchor: middle; font-size: 12px;">Em uso</tspan></text></g></svg></div>
-                            <div class="resource-machine-type">
-                                <stud-dropdown-input class="resource-machine-type-input" _nghost-sro-c192="">
-                                    <stud-dropdown>
-                                        <div tabindex="0" class="dropdown-base" id="" style="width: 136px; height: 21px;">
-                                            <div class="dropdown">
-                                                <div class="dropdown-base-select" title="Availability state" style="height: 20px; background-position-x: 104px;">Estado de disponibilidade</div>
-                                              
-                                            </div>
-                                        </div>
-                                    </stud-dropdown>
-                                </stud-dropdown-input>
-                            </div>
-                            <div class="resources-type-list resources-type-list-columns">
-                                <div class="resources-type-list-items resources-type-list-items-columns" title="Available">
-                                    <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(175, 144, 4);">
-                                    </span>
-                                    <span>
-                                        <a _ngcontent-sro-c193="">Em uso</a>
-                                    </span>
+		   </div>
+		  </div>
+		 </stud-dropdown>
+		</stud-dropdown-input>
+	   </div>
+	   <div class="resources-type-list resources-type-list-columns">
+		<div class="resources-type-list-items resources-type-list-items-columns" title="Available">
+		 <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(175, 144, 4);">
+		 </span>
+		 <span>
+		  <a _ngcontent-sro-c193="">Em uso</a>
+		 </span>
 
-                                </div>
-                                <div class="resources-type-list-items resources-type-list-items-columns" title="Disconnected">
-                                    <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(181, 69, 164);">
-                                    </span>
-                                    <span><a>Descarte</a></span>
+		</div>
+		<div class="resources-type-list-items resources-type-list-items-columns" title="Disconnected">
+		 <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(181, 69, 164);">
+		 </span>
+		 <span><a>Descarte</a></span>
 
-                                </div>
-                                <div class="resources-type-list-items resources-type-list-items-columns" title="In Use">
-                                    <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(29, 162, 180);">
-                                    </span>
-                                    <span><a>Aguardando peças</a></span>
+		</div>
+		<div class="resources-type-list-items resources-type-list-items-columns" title="In Use">
+		 <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(29, 162, 180);">
+		 </span>
+		 <span><a>Aguardando peças</a></span>
 
-                                </div>
-                                <div class="resources-type-list-items resources-type-list-items-columns" title="Off">
-                                    <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(177, 122, 240);">
-                                    </span>
-                                    <span><a>Disponível</a></span>
+		</div>
+		<div class="resources-type-list-items resources-type-list-items-columns" title="Off">
+		 <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(177, 122, 240);">
+		 </span>
+		 <span><a>Disponível</a></span>
 
-                                </div>
-                                <div class="resources-type-list-items resources-type-list-items-columns" title="Unregistered">
-                                    <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(200, 200, 200);">
-                                    </span>
-                                    <span><a>Manutenção</a></span>
+		</div>
+		<div class="resources-type-list-items resources-type-list-items-columns" title="Unregistered">
+		 <span class="resources-type-list-legend resources-type-list-legend-columns" style="background-color: rgb(200, 200, 200);">
+		 </span>
+		 <span><a>Manutenção</a></span>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="resource-chart-right">
-                            <ul class="resources-list">
-                                <li class="selected">
-                                    <img src="~/img/laptop.png" alt="Notebooks" />
-                                    <span class="resources-list-name resources-list-name-selected">Notebooks</span>
-                                    <span class="resources-list-count resources-list-count-background">
-                                        <a>2156</a>
+		</div>
+	   </div>
+	  </div>
+	  <div class="resource-chart-right">
+	   <ul class="resources-list">
+		<li class="selected">
+		 <img src="~/img/laptop.png" alt="Notebooks" />
+		 <span class="resources-list-name resources-list-name-selected">Notebooks</span>
+		 <span class="resources-list-count resources-list-count-background">
+		  <a>2156</a>
 
-                                    </span>
-                                </li>
-                                <li id="homeResourcesApps">
-                                    <img src="~/img/desktop.png" alt="Desktop" />
-                                    <span class="resources-list-name">Desktop</span>
-                                    <span class="resources-list-count resources-list-count-background">
-                                        <a>1347</a>
-                                    </span>
-                                    <span class="resources-list-count resources-list-count-spinner">
+		 </span>
+		</li>
+		<li id="homeResourcesApps">
+		 <img src="~/img/desktop.png" alt="Desktop" />
+		 <span class="resources-list-name">Desktop</span>
+		 <span class="resources-list-count resources-list-count-background">
+		  <a>1347</a>
+		 </span>
+		 <span class="resources-list-count resources-list-count-spinner">
 
-                                    </span>
-                                </li>
-                                <li id="homeResourcesDeliveryGroups">
-                                    <img src="~/img/monitor.png" alt="Monitor" />
-                                    <span class="resources-list-name">Monitor</span>
-                                    <span class="resources-list-count resources-list-count-background">
-                                        <a>60</a>
+		 </span>
+		</li>
+		<li id="homeResourcesDeliveryGroups">
+		 <img src="~/img/monitor.png" alt="Monitor" />
+		 <span class="resources-list-name">Monitor</span>
+		 <span class="resources-list-count resources-list-count-background">
+		  <a>60</a>
 
-                                    </span>
-                                    <span class="resources-list-count resources-list-count-spinner">
+		 </span>
+		 <span class="resources-list-count resources-list-count-spinner">
 
-                                    </span>
-                                </li>
-                                <li id="homeResourcesCatalogs" class="">
-                                    <img src="~/img/acessorios.svg" alt="Acessorios" />
-                                    <span class="resources-list-name">Acessorios</span>
-                                    <span class="resources-list-count resources-list-count-background">
-                                        <a>14</a>
+		 </span>
+		</li>
+		<li id="homeResourcesCatalogs" class="">
+		 <img src="~/img/acessorios.svg" alt="Acessorios" />
+		 <span class="resources-list-name">Acessorios</span>
+		 <span class="resources-list-count resources-list-count-background">
+		  <a>14</a>
 
-                                    </span>
-                                    <span class="resources-list-count resources-list-count-spinner">
+		 </span>
+		 <span class="resources-list-count resources-list-count-spinner">
 
-                                    </span>
+		 </span>
 
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+		</li>
+	   </ul>
+	  </div>
+	 </div>
 
-                </div>
+	</div>
 
-            </stud-resources>
-            <stud-sessions>
-                <div class="sessions-container">
+   </stud-resources>
+   <stud-sessions>
+	<div class="sessions-container">
 
-                    <div class="sessions-title">Sessões lançadas</div>
-                    <div class="sessions-chart">
+	 <div class="sessions-title">Sessões lançadas</div>
+	 <div class="sessions-chart">
 
-                        <div class="sessions-chart-tooltip" style="left: 1333px; top: 270px; display: none;">1550</div>
-                        <div class="sessions-chart-tooltip" style="left: 1226px; top: 326px; display: none;">1516</div><svg id="sessionsBarChart" width="494" height="216"><g transform="translate(50,5)"><g transform="translate(0,191)" class="sessions-chart-x-axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="#000" d="M0.5,6V0.5H444.5V6"></path><g class="tick" opacity="1" transform="translate(31.714285714285715,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 4</text></g><g class="tick" opacity="1" transform="translate(95.14285714285714,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 5</text></g><g class="tick" opacity="1" transform="translate(158.57142857142858,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 6</text></g><g class="tick" opacity="1" transform="translate(222,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 7</text></g><g class="tick" opacity="1" transform="translate(285.42857142857144,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 8</text></g><g class="tick" opacity="1" transform="translate(348.8571428571429,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 9</text></g><g class="tick" opacity="1" transform="translate(412.2857142857143,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 10</text></g></g><g class="sessions-chart-y-axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="#000" d="M-6,191.5H0.5V0.5H-6"></path><g class="tick" opacity="1" transform="translate(0,191.5)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,170.96236559139786)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">200</text></g><g class="tick" opacity="1" transform="translate(0,150.4247311827957)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">400</text></g><g class="tick" opacity="1" transform="translate(0,129.88709677419354)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">600</text></g><g class="tick" opacity="1" transform="translate(0,109.34946236559139)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">800</text></g><g class="tick" opacity="1" transform="translate(0,88.81182795698925)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,000</text></g><g class="tick" opacity="1" transform="translate(0,68.2741935483871)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,200</text></g><g class="tick" opacity="1" transform="translate(0,47.73655913978496)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,400</text></g><g class="tick" opacity="1" transform="translate(0,27.198924731182785)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,600</text></g><g class="tick" opacity="1" transform="translate(0,6.661290322580641)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,800</text></g></g><rect class="sessions-chart-bar" rx="2" x="0" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="38.30268817204302" height="152.69731182795698"></rect><rect class="sessions-chart-bar" rx="2" x="63.42857142857143" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="100.01827956989247" height="90.98172043010753"></rect><rect class="sessions-chart-bar" rx="2" x="126.85714285714286" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="165.1225806451613" height="25.877419354838707"></rect><rect class="sessions-chart-bar" rx="2" x="190.28571428571428" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="33.88709677419354" height="157.11290322580646"></rect><rect class="sessions-chart-bar" rx="2" x="253.71428571428572" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="35.32473118279569" height="155.6752688172043"></rect><rect class="sessions-chart-bar" rx="2" x="317.14285714285717" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="33.98978494623657" height="157.01021505376343"></rect><rect class="sessions-chart-bar" rx="2" x="380.57142857142856" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="31.833333333333314" height="159.16666666666669"></rect></g></svg>
-                    </div>
-                    <div class="sessions-footer">
-                        <span class="sessions-footer-text">Monitoramento</span>
-                    </div>
+	  <div class="sessions-chart-tooltip" style="left: 1333px; top: 270px; display: none;">1550</div>
+	  <div class="sessions-chart-tooltip" style="left: 1226px; top: 326px; display: none;">1516</div><svg id="sessionsBarChart" width="494" height="216"><g transform="translate(50,5)"><g transform="translate(0,191)" class="sessions-chart-x-axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="#000" d="M0.5,6V0.5H444.5V6"></path><g class="tick" opacity="1" transform="translate(31.714285714285715,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 4</text></g><g class="tick" opacity="1" transform="translate(95.14285714285714,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 5</text></g><g class="tick" opacity="1" transform="translate(158.57142857142858,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 6</text></g><g class="tick" opacity="1" transform="translate(222,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 7</text></g><g class="tick" opacity="1" transform="translate(285.42857142857144,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 8</text></g><g class="tick" opacity="1" transform="translate(348.8571428571429,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 9</text></g><g class="tick" opacity="1" transform="translate(412.2857142857143,0)"><line stroke="#000" y2="6"></line><text fill="#000" y="9" dy="0.71em">Nov 10</text></g></g><g class="sessions-chart-y-axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="#000" d="M-6,191.5H0.5V0.5H-6"></path><g class="tick" opacity="1" transform="translate(0,191.5)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,170.96236559139786)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">200</text></g><g class="tick" opacity="1" transform="translate(0,150.4247311827957)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">400</text></g><g class="tick" opacity="1" transform="translate(0,129.88709677419354)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">600</text></g><g class="tick" opacity="1" transform="translate(0,109.34946236559139)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">800</text></g><g class="tick" opacity="1" transform="translate(0,88.81182795698925)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,000</text></g><g class="tick" opacity="1" transform="translate(0,68.2741935483871)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,200</text></g><g class="tick" opacity="1" transform="translate(0,47.73655913978496)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,400</text></g><g class="tick" opacity="1" transform="translate(0,27.198924731182785)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,600</text></g><g class="tick" opacity="1" transform="translate(0,6.661290322580641)"><line stroke="#000" x2="444"></line><text fill="#000" x="-9" dy="0.32em">1,800</text></g></g><rect class="sessions-chart-bar" rx="2" x="0" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="38.30268817204302" height="152.69731182795698"></rect><rect class="sessions-chart-bar" rx="2" x="63.42857142857143" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="100.01827956989247" height="90.98172043010753"></rect><rect class="sessions-chart-bar" rx="2" x="126.85714285714286" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="165.1225806451613" height="25.877419354838707"></rect><rect class="sessions-chart-bar" rx="2" x="190.28571428571428" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="33.88709677419354" height="157.11290322580646"></rect><rect class="sessions-chart-bar" rx="2" x="253.71428571428572" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="35.32473118279569" height="155.6752688172043"></rect><rect class="sessions-chart-bar" rx="2" x="317.14285714285717" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="33.98978494623657" height="157.01021505376343"></rect><rect class="sessions-chart-bar" rx="2" x="380.57142857142856" width="31.714285714285715" transform="translate(15.857142857142858,0)" y="31.833333333333314" height="159.16666666666669"></rect></g></svg>
+	 </div>
+	 <div class="sessions-footer">
+	  <span class="sessions-footer-text">Monitoramento</span>
+	 </div>
 
-                </div>
-            </stud-sessions>
-        </div>
-    </div>
+	</div>
+   </stud-sessions>
+  </div>
+ </div>
 </section>
 <section class="macbook">
-    <div class="section-content">
+ <div class="section-content">
 
-        <div class="description">
+  <div class="description">
 
-            <h2>
-                <span>MacBook</span>
-            </h2>
-            <p>Pro de 13 pol.</p>
-            <div class="hero-button">
-                <a href="#">Ver mais</a>
-            </div>
+   <h2>
+	<span>MacBook</span>
+   </h2>
+   <p>Pro de 13 pol.</p>
+   <div class="hero-button">
+	<a href="#">Ver mais</a>
+   </div>
 
 
 
-        </div>
-        <img src="~/img/macbook.jpg" />
-    </div>
+  </div>
+  <img src="~/img/macbook.jpg" />
+ </div>
 </section>
 
 <section>
-   
 
-        <div class="description">
 
-            <h2>
-                <span>Notebook</span>
-            </h2>
-           
-  
-    </div>
-<div class="sd-category-container">
-   
-       
+ <div class="description">
 
+  <h2>
+   <span>Notebook</span>
+  </h2>
 
-        <div class="sd-category-grid">
-            <article class="sd-ps-stack">
-                <div class="sd-ps-top">
 
-                    <section class="sd-ps-image ">
-                        <a href="#!" tabindex="-1">
+ </div>
+ <div class="sd-category-container">
 
-                           
-                             <img src="~/img/latitude5400.jpg" class="" alt="Novo Vostro Small Desktop" width="165" height="119">
-                        </a>
-                    </section>
-                    <section class="sd-ps-title" >
-                        <h3 class="sd-ps-title-content">
-                            <a href="https://dl.dell.com/topicspdf/latitude-14-5400-laptop_owners-manual2_pt-br.pdf" target="_blank">Notebook Latitude 5400</a>
-                        </h3>
-                    </section>
 
 
 
-                    <div class="sd-ps-energy-container">
+  <div class="sd-category-grid">
+   <article class="sd-ps-stack">
+	<div class="sd-ps-top">
 
-                    </div>
+	 <section class="sd-ps-image ">
+	  <a href="#!" tabindex="-1">
 
 
-                    <section class="sd-ps-specifications">
+	   <img src="~/img/latitude5400.jpg" class="" alt="Novo Vostro Small Desktop" width="165" height="119">
+	  </a>
+	 </section>
+	 <section class="sd-ps-title">
+	  <h3 class="sd-ps-title-content">
+	   <a href="https://dl.dell.com/topicspdf/latitude-14-5400-laptop_owners-manual2_pt-br.pdf" target="_blank">Notebook Latitude 5400</a>
+	  </h3>
+	 </section>
 
-                        <div>
-                            <div class="sd-ps-doc">
 
-                                <span>Documentação</span>
-                            </div>
 
-                            <div class="sd-ps-sav">
-                                <span>Especificações técnicas </span>
+	 <div class="sd-ps-energy-container">
+	 </div>
 
-                            </div>
 
+	 <section class="sd-ps-specifications">
 
-                        </div>
-                    </section>
+	  <div>
+	   <div class="sd-ps-doc">
 
-                    <section class="sd-ps-status-label">
+		<span>Documentação</span>
+	   </div>
 
-                        <div class="">
+	   <div class="sd-ps-sav">
+		<span>Especificações técnicas </span>
 
-                        </div>
-                    </section>
-                    <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
+	   </div>
 
-                        <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
-                            <div class="sd-ps-claim-progress-bar-indicator">
-                                <div class="progressbar-text" style="width: 100%;"></div>
-                            </div>
 
-                        </div>
+	  </div>
+	 </section>
 
+	 <section class="sd-ps-status-label">
 
-                    </section>
-                    <section class="sd-ps-spec-desc ">
+	  <div class="">
+	  </div>
+	 </section>
+	 <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
 
-                        <div class="sd-ps-feature-specs">
-                            <div class="sd-ps-spec-list">
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
-                                    <div>12ª geração Intel® Core™ i5-12400</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
-                                        <i class="fa-sharp fa-solid fa-compact-disc"></i>
-                                    </span>
-                                    <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
-                                    <div>Intel® UHD Graphics 730</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
-                                    <div>Full HD de 15.6" (1920 x 1080) WVA</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
-                                    <div>SSD de 512GB PCIe NVMe M.2</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
-                                    <div>Memória de 8GB DDR4</div>
-                                </div>
-                            </div>
-                        </div>
+	  <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
+	   <div class="sd-ps-claim-progress-bar-indicator">
+		<div class="progressbar-text" style="width: 100%;"></div>
+	   </div>
 
+	  </div>
 
 
+	 </section>
+	 <section class="sd-ps-spec-desc ">
 
+	  <div class="sd-ps-feature-specs">
+	   <div class="sd-ps-spec-list">
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
+		 <div>12ª geração Intel® Core™ i5-12400</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
+		  <i class="fa-sharp fa-solid fa-compact-disc"></i>
+		 </span>
+		 <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
+		 <div>Intel® UHD Graphics 730</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
+		 <div>Full HD de 15.6" (1920 x 1080) WVA</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
+		 <div>SSD de 512GB PCIe NVMe M.2</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
+		 <div>Memória de 8GB DDR4</div>
+		</div>
+	   </div>
+	  </div>
 
-                    </section>
-                </div>
-                <div class="sd-ps-bottom" >
-                    <section class="sd-ps-button sd-ps-button-details">
-                        <a class="sd-btn sd-secondary-btn-blue" href="#!" aria-label="Especificações técnicas">Especificações técnicas</a>
-                    </section>
-                </div>
-            </article>
-            <article class="sd-ps-stack">
-                <div class="sd-ps-top">
 
-                    <section class="sd-ps-image ">
-                        <a href="#!" tabindex="-1">
 
-                            <img src="~/img/latitude5480.jpg" class="" alt="Novo Vostro Small Desktop" width="165" height="119">
 
-                        </a>
-                    </section>
-                    <section class="sd-ps-title" match-row="">
-                        <h3 class="sd-ps-title-content">
-                            <a href="https://dl.dell.com/content/manual25161197-dell-latitude-5480-manual-do-propriet%C3%A1rio.pdf?language=pt-br&ps=true">Notebook Latitude 5480</a>
-                        </h3>
-                    </section>
 
+	 </section>
+	</div>
+	<div class="sd-ps-bottom">
+	 <section class="sd-ps-button sd-ps-button-details">
+	  <a class="sd-btn sd-secondary-btn-blue" href="#!" aria-label="Especificações técnicas">Especificações técnicas</a>
+	 </section>
+	</div>
+   </article>
+   <article class="sd-ps-stack">
+	<div class="sd-ps-top">
 
+	 <section class="sd-ps-image ">
+	  <a href="#!" tabindex="-1">
 
-                    <div class="sd-ps-energy-container">
+	   <img src="~/img/latitude5480.jpg" class="" alt="Novo Vostro Small Desktop" width="165" height="119">
 
-                    </div>
+	  </a>
+	 </section>
+	 <section class="sd-ps-title" match-row="">
+	  <h3 class="sd-ps-title-content">
+	   <a href="https://dl.dell.com/content/manual25161197-dell-latitude-5480-manual-do-propriet%C3%A1rio.pdf?language=pt-br&ps=true">Notebook Latitude 5480</a>
+	  </h3>
+	 </section>
 
 
-                    <section class="sd-ps-specifications">
 
-                        <div>
-                            <div class="sd-ps-doc">
+	 <div class="sd-ps-energy-container">
+	 </div>
 
-                                <span>Documentação</span>
-                            </div>
 
-                            <div class="sd-ps-sav">
-                                <span>Especificações técnicas </span>
+	 <section class="sd-ps-specifications">
 
-                            </div>
+	  <div>
+	   <div class="sd-ps-doc">
 
+		<span>Documentação</span>
+	   </div>
 
-                        </div>
-                    </section>
+	   <div class="sd-ps-sav">
+		<span>Especificações técnicas </span>
 
-                    <section class="sd-ps-status-label">
+	   </div>
 
-                        <div class="">
 
-                        </div>
-                    </section>
-                    <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
+	  </div>
+	 </section>
 
-                        <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
-                            <div class="sd-ps-claim-progress-bar-indicator">
-                                <div class="progressbar-text" style="width: 100%;"></div>
-                            </div>
+	 <section class="sd-ps-status-label">
 
-                        </div>
+	  <div class="">
+	  </div>
+	 </section>
+	 <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
 
+	  <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
+	   <div class="sd-ps-claim-progress-bar-indicator">
+		<div class="progressbar-text" style="width: 100%;"></div>
+	   </div>
 
-                    </section>
-                    <section class="sd-ps-spec-desc " >
+	  </div>
 
-                        <div class="sd-ps-feature-specs">
-                            <div class="sd-ps-spec-list">
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
-                                    <div>12ª geração Intel® Core™ i5-12400</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
-                                        <i class="fa-sharp fa-solid fa-compact-disc"></i>
-                                    </span>
-                                    <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
-                                    <div>Intel® UHD Graphics 730</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
-                                    <div>Full HD de 15.6" (1920 x 1080) WVA</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
-                                    <div>SSD de 512GB PCIe NVMe M.2</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
-                                    <div>Memória de 8GB DDR4</div>
-                                </div>
-                            </div>
-                        </div>
 
+	 </section>
+	 <section class="sd-ps-spec-desc ">
 
+	  <div class="sd-ps-feature-specs">
+	   <div class="sd-ps-spec-list">
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
+		 <div>12ª geração Intel® Core™ i5-12400</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
+		  <i class="fa-sharp fa-solid fa-compact-disc"></i>
+		 </span>
+		 <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
+		 <div>Intel® UHD Graphics 730</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
+		 <div>Full HD de 15.6" (1920 x 1080) WVA</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
+		 <div>SSD de 512GB PCIe NVMe M.2</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
+		 <div>Memória de 8GB DDR4</div>
+		</div>
+	   </div>
+	  </div>
 
 
-                    </section>
-                </div>
-                <div class="sd-ps-bottom">
-                    <section class="sd-ps-button sd-ps-button-details">
-                        <a class="sd-btn sd-secondary-btn-blue" href="#!" aria-label="Especificações técnicas ">Especificações técnicas</a>
-                    </section>
-                </div>
-            </article>
-            <article class="sd-ps-stack">
-                <div class="sd-ps-top">
 
-                    <section class="sd-ps-image ">
-                        <a href="#!" tabindex="-1">
 
-                            <img src="~/img/latitude5490.jpg" class="" alt="Novo Latitude" width="165" height="119">
+	 </section>
+	</div>
+	<div class="sd-ps-bottom">
+	 <section class="sd-ps-button sd-ps-button-details">
+	  <a class="sd-btn sd-secondary-btn-blue" href="#!" aria-label="Especificações técnicas ">Especificações técnicas</a>
+	 </section>
+	</div>
+   </article>
+   <article class="sd-ps-stack">
+	<div class="sd-ps-top">
 
-                        </a>
-                    </section>
-                    <section class="sd-ps-title">
-                        <h3 class="sd-ps-title-content">
-                            <a href="https://dl.dell.com/topicspdf/latitude-14-5490-laptop_owners-manual_pt-br.pdf">Notebook Latitude 5490</a>
-                        </h3>
-                    </section>
+	 <section class="sd-ps-image ">
+	  <a href="#!" tabindex="-1">
 
+	   <img src="~/img/latitude5490.jpg" class="" alt="Novo Latitude" width="165" height="119">
 
+	  </a>
+	 </section>
+	 <section class="sd-ps-title">
+	  <h3 class="sd-ps-title-content">
+	   <a href="https://dl.dell.com/topicspdf/latitude-14-5490-laptop_owners-manual_pt-br.pdf">Notebook Latitude 5490</a>
+	  </h3>
+	 </section>
 
-                    <div class="sd-ps-energy-container">
 
-                    </div>
 
+	 <div class="sd-ps-energy-container">
+	 </div>
 
-                    <section class="sd-ps-specifications ">
 
-                        <div>
-                            <div class="sd-ps-doc">
+	 <section class="sd-ps-specifications ">
 
-                                <span>Documentação</span>
-                            </div>
+	  <div>
+	   <div class="sd-ps-doc">
 
-                            <div class="sd-ps-sav">
-                                <span>Especificações técnicas </span>
+		<span>Documentação</span>
+	   </div>
 
-                            </div>
+	   <div class="sd-ps-sav">
+		<span>Especificações técnicas </span>
 
+	   </div>
 
-                        </div>
-                    </section>
 
-                    <section class="sd-ps-status-label">
+	  </div>
+	 </section>
 
-                        <div class="">
+	 <section class="sd-ps-status-label">
 
-                        </div>
-                    </section>
-                    <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
+	  <div class="">
+	  </div>
+	 </section>
+	 <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
 
-                        <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
-                            <div class="sd-ps-claim-progress-bar-indicator">
-                                <div class="progressbar-text" style="width: 100%;"></div>
-                            </div>
+	  <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
+	   <div class="sd-ps-claim-progress-bar-indicator">
+		<div class="progressbar-text" style="width: 100%;"></div>
+	   </div>
 
-                        </div>
+	  </div>
 
 
-                    </section>
-                    <section class="sd-ps-spec-desc ">
+	 </section>
+	 <section class="sd-ps-spec-desc ">
 
-                        <div class="sd-ps-feature-specs">
-                            <div class="sd-ps-spec-list">
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
-                                    <div>12ª geração Intel® Core™ i5-12400</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
-                                        <i class="fa-sharp fa-solid fa-compact-disc"></i>
-                                    </span>
-                                    <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
-                                    <div>Intel® UHD Graphics 730</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
-                                    <div>Full HD de 15.6" (1920 x 1080) WVA</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
-                                    <div>SSD de 512GB PCIe NVMe M.2</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
-                                    <div>Memória de 8GB DDR4</div>
-                                </div>
-                            </div>
-                        </div>
+	  <div class="sd-ps-feature-specs">
+	   <div class="sd-ps-spec-list">
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
+		 <div>12ª geração Intel® Core™ i5-12400</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
+		  <i class="fa-sharp fa-solid fa-compact-disc"></i>
+		 </span>
+		 <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
+		 <div>Intel® UHD Graphics 730</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
+		 <div>Full HD de 15.6" (1920 x 1080) WVA</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
+		 <div>SSD de 512GB PCIe NVMe M.2</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
+		 <div>Memória de 8GB DDR4</div>
+		</div>
+	   </div>
+	  </div>
 
 
 
 
 
-                    </section>
-                </div>
-                <div class="sd-ps-bottom">
-                    <section class="sd-ps-button sd-ps-button-details">
-                        <a class="sd-btn sd-secondary-btn-blue" href="#!" aria-label="Especificações técnicas ">Especificações técnicas</a>
-                    </section>
-                </div>
-            </article>
-            <article class="sd-ps-stack">
-                <div class="sd-ps-top">
+	 </section>
+	</div>
+	<div class="sd-ps-bottom">
+	 <section class="sd-ps-button sd-ps-button-details">
+	  <a class="sd-btn sd-secondary-btn-blue" href="#!" aria-label="Especificações técnicas ">Especificações técnicas</a>
+	 </section>
+	</div>
+   </article>
+   <article class="sd-ps-stack">
+	<div class="sd-ps-top">
 
-                    <section class="sd-ps-image ">
-                        <a href="#!" tabindex="-1">
+	 <section class="sd-ps-image ">
+	  <a href="#!" tabindex="-1">
 
-                            <img src="~/img/latitude5410.jpg" class="" alt="Novo Vostro Small Desktop" width="165" height="119">
+	   <img src="~/img/latitude5410.jpg" class="" alt="Novo Vostro Small Desktop" width="165" height="119">
 
-                        </a>
-                    </section>
-                    <section class="sd-ps-title">
-                        <h3 class="sd-ps-title-content">
-                            <a href="https://dl.dell.com/topicspdf/latitude-14-5410-laptop_owners-manual2_pt-pt.pdf">Notebook Latitude 5410</a>
-                        </h3>
-                    </section>
+	  </a>
+	 </section>
+	 <section class="sd-ps-title">
+	  <h3 class="sd-ps-title-content">
+	   <a href="https://dl.dell.com/topicspdf/latitude-14-5410-laptop_owners-manual2_pt-pt.pdf">Notebook Latitude 5410</a>
+	  </h3>
+	 </section>
 
 
 
-                    <div class="sd-ps-energy-container">
+	 <div class="sd-ps-energy-container">
+	 </div>
 
-                    </div>
 
+	 <section class="sd-ps-specifications ">
 
-                    <section class="sd-ps-specifications ">
+	  <div>
+	   <div class="sd-ps-doc">
 
-                        <div>
-                            <div class="sd-ps-doc">
+		<span>Documentação</span>
+	   </div>
 
-                                <span>Documentação</span>
-                            </div>
+	   <div class="sd-ps-sav">
+		<span>Especificações técnicas </span>
 
-                            <div class="sd-ps-sav">
-                                <span>Especificações técnicas </span>
+	   </div>
 
-                            </div>
 
+	  </div>
+	 </section>
 
-                        </div>
-                    </section>
+	 <section class="sd-ps-status-label">
 
-                    <section class="sd-ps-status-label">
+	  <div class="">
+	  </div>
+	 </section>
+	 <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
 
-                        <div class="">
+	  <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
+	   <div class="sd-ps-claim-progress-bar-indicator">
+		<div class="progressbar-text" style="width: 100%;"></div>
+	   </div>
 
-                        </div>
-                    </section>
-                    <section class="sd-ps-claim-progress-bar sd-ps-claim-progress  ">
+	  </div>
 
-                        <div class="sd-ps-claim-progress-bar-wrapper pb-fmiz">
-                            <div class="sd-ps-claim-progress-bar-indicator">
-                                <div class="progressbar-text" style="width: 100%;"></div>
-                            </div>
 
-                        </div>
+	 </section>
+	 <section class="sd-ps-spec-desc ">
 
+	  <div class="sd-ps-feature-specs">
+	   <div class="sd-ps-spec-list">
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
+		 <div>12ª geração Intel® Core™ i5-12400</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
 
-                    </section>
-                    <section class="sd-ps-spec-desc ">
+		 </span>
+		 <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
+		 <div>Intel® UHD com memória gráfica compartilhada</div>
+		</div>
 
-                        <div class="sd-ps-feature-specs">
-                            <div class="sd-ps-spec-list">
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_processor"></span>
-                                    <div>12ª geração Intel® Core™ i5-12400</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_disc-system">
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
+		 <div>Full HD de 15.6" (1920 x 1080) WVA</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
+		 <div>SSD de 512GB PCIe NVMe M.2</div>
+		</div>
+		<div class="sd-ps-spec-item">
+		 <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
+		 <div>Memória de 8GB DDR4</div>
+		</div>
+	   </div>
+	  </div>
 
-                                    </span>
-                                    <div>Windows 10 Home&nbsp;(A Dell Technologies recomenda o Windows 10 Pro para empresas)</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_video-card"></span>
-                                    <div>Intel® UHD com memória gráfica compartilhada</div>
-                                </div>
+	 </section>
+	</div>
+	<div class="sd-ps-bottom">
+	 <section class="sd-ps-button sd-ps-button-details">
+	  <a class="sd-btn sd-secondary-btn-blue" href="https://dl.dell.com/topicspdf/latitude-14-5410-laptop_owners-manual2_pt-pt.pdf" aria-label="Especificações técnicas ">Especificações técnicas</a>
+	 </section>
+	</div>
+   </article>
 
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_device-screen-size"></span>
-                                    <div>Full HD de 15.6" (1920 x 1080) WVA</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_hard-drive"></span>
-                                    <div>SSD de 512GB PCIe NVMe M.2</div>
-                                </div>
-                                <div class="sd-ps-spec-item">
-                                    <span aria-hidden="true" class="sd-icon sd-dds-font-icon dds_memory"></span>
-                                    <div>Memória de 8GB DDR4</div>
-                                </div>
-                            </div>
-                        </div>
+  </div>
 
-                    </section>
-                </div>
-                <div class="sd-ps-bottom">
-                    <section class="sd-ps-button sd-ps-button-details">
-                        <a class="sd-btn sd-secondary-btn-blue" href="https://dl.dell.com/topicspdf/latitude-14-5410-laptop_owners-manual2_pt-pt.pdf" aria-label="Especificações técnicas ">Especificações técnicas</a>
-                    </section>
-                </div>
-            </article>
-
-        </div>
-
-</div>    
+ </div>
 
 </section>
 
